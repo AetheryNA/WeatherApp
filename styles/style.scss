@@ -1,0 +1,61 @@
+$backgroundColor : linear-gradient(#7158e2, #18dcff);
+$textColor: #fff;
+
+* {
+    margin : 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: $backgroundColor;
+}
+
+body {
+    color: $textColor;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.location {
+    margin-top: 235px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    canvas {
+        margin-left: 135px;
+    }
+
+}
+
+.temperature {
+    @extend .location;
+    margin-top : 40px;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+        cursor: pointer;
+    }
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 40px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+}
+
+
