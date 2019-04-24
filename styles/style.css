@@ -10,53 +10,30 @@ html {
   background-repeat: no-repeat;
   background: -webkit-gradient(linear, left top, left bottom, from(#7158e2), to(#18dcff));
   background: linear-gradient(#7158e2, #18dcff);
+  overflow: hidden;
 }
 
 body {
   color: #fff;
-  font-family: sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
 }
 
-.location, .temperature {
-  margin-top: 235px;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.location {
+  position: absolute;
+  bottom: 0;
 }
 
-.location canvas, .temperature canvas {
-  margin-left: 135px;
+.icon {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
 }
 
-.temperature {
-  margin-top: 40px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.backgroundIcon {
+  position: absolute;
+  top: -100px;
+  opacity: 0.2;
 }
 
 .temperature h2 {

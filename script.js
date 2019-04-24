@@ -33,6 +33,7 @@ window.addEventListener("load", () => {
           let celcius = (temperature - 32) * (5 / 9);
 
           setIcons(icon, document.querySelector(".icon"));
+          setIcons(icon, document.querySelector(".backgroundIcon"));
 
           temperatureSection.addEventListener("click", () => {
             if (temperatureSpan.textContent === "F") {
