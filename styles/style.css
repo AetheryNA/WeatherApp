@@ -22,22 +22,38 @@ body {
 .location {
   position: absolute;
   bottom: 0;
+  margin-left: 10px;
+}
+
+canvas {
+  z-index: -1;
 }
 
 .icon {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 65px;
 }
 
 .backgroundIcon {
   position: absolute;
   top: -100px;
   opacity: 0.2;
-  z-index: -1;
 }
 
 .temperature h2 {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.temperature span {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  font-size: 40px;
+  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -50,9 +66,9 @@ body {
           align-items: center;
 }
 
-.degree-section span {
-  font-size: 40px;
-  padding-left: 10px;
-  cursor: pointer;
+.temperature-description {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

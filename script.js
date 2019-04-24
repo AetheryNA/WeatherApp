@@ -56,6 +56,7 @@ window.addEventListener("load", () => {
     return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
+
 function time() {
   let currentTime = document.querySelector(".currentTime");
 
