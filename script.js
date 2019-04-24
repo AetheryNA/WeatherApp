@@ -56,14 +56,12 @@ window.addEventListener("load", () => {
     return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
-
 function time() {
   let currentTime = document.querySelector(".currentTime");
 
   let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
-  let s = date.getSeconds();
 
   if (h == 0) {
     h = 12;
@@ -73,6 +71,8 @@ function time() {
     h = h - 12;
     session = "PM";
   }
+
+  m = m < 10 ? "0" + m : m;
 
   currentTime.textContent = `${h}:${m}`;
 
