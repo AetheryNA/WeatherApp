@@ -56,3 +56,27 @@ window.addEventListener("load", () => {
     return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
+
+function time() {
+  let currentTime = document.querySelector(".currentTime");
+
+  let date = new Date();
+  let h = date.getHours();
+  let m = date.getMinutes();
+  let s = date.getSeconds();
+
+  if (h == 0) {
+    h = 12;
+  }
+
+  if (h > 12) {
+    h = h - 12;
+    session = "PM";
+  }
+
+  currentTime.textContent = `${h}:${m}`;
+
+  setTimeout(time, 500);
+}
+
+time();
